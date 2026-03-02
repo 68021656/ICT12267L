@@ -1,0 +1,12 @@
+<!-- Header เมนู-->
+    <header>
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">Boonsiri Masan</div>
+            <ul class="nav-list d-flex">
+                <li><a href="#">หน้าแรก</a></li>
+                <li><a href="#">ข้อมูลบริษัท</a></li>
+                <li><a href="#">บริการ</a></li>
+                <li><a href="#">เกี่ยวกับเรา</a></li>
+            </ul>
+        </div>
+    </header>
