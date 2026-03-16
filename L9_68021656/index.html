@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Movie Website</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+
+<a class="navbar-brand" href="#">🎬 Movie</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+ภาพยนตร์
+</a>
+
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#">ล้วงลับเวทีลวง</a></li>
+<li><a class="dropdown-item" href="#">เซลล์ขยันพันธุ์เดือด</a></li>
+<li><a class="dropdown-item" href="#">Gundam Seed Freedom</a></li>
+</ul>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#about">เกี่ยวกับเรา</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contact">ติดต่อเรา</a>
+</li>
+
+</ul>
+</div>
+</div>
+</nav>
+
+
+<!-- ================= BANNER ================= -->
+<section class="banner text-white">
+<div class="container">
+<h1>Welcome to Movie World</h1>
+<p>รวมภาพยนตร์ยอดนิยมจากทั่วโลก</p>
+</div>
+</section>
+
+<!-- ================= MOVIE CARD ================= -->
+<section class="container my-5">
+
+<div class="row g-4">
+
+<!-- CARD 1 -->
+<div class="col-md-4">
+<div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5 class="card-title">ล้วงลับเวทีลวง</h5>
+
+<button class="btn btn-primary"
+data-bs-toggle="modal"
+data-bs-target="#movie1">
+ดูรายละเอียด
+</button>
+
+</div>
+</div>
+</div>
+
+
+<!-- CARD 2 -->
+<div class="col-md-4">
+<div class="card">
+
+<img src="images.2" class="card-img-top">
+
+<div class="card-body text-center">
+<h5 class="card-title">เซลล์ขยันพันธุ์เดือด</h5>
+
+<button class="btn btn-primary"
+data-bs-toggle="modal"
+data-bs-target="#movie2">
+ดูรายละเอียด
+</button>
+
+</div>
+</div>
+</div>
+
+
+<!-- CARD 3 -->
+<div class="col-md-4">
+<div class="card">
+
+<img src="images.3" class="card-img-top">
+
+<div class="card-body text-center">
+<h5 class="card-title">Gundam Seed Freedom</h5>
+
+<button class="btn btn-primary"
+data-bs-toggle="modal"
+data-bs-target="#movie3">
+ดูรายละเอียด
+</button>
+
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="container my-5 text-center">
+
+<h2>เกี่ยวกับเรา</h2>
+
+<p>
+เว็บไซต์นี้สร้างขึ้นเพื่อรวบรวมข้อมูลภาพยนตร์
+และแนะนำภาพยนตร์ที่น่าสนใจจากทั่วโลก
+สำหรับผู้ที่รักการดูหนัง
+</p>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="container my-5">
+
+<h2 class="text-center">ติดต่อเรา</h2>
+
+<form>
+
+<div class="mb-3">
+<label class="form-label">ชื่อ-นามสกุล</label>
+<input type="text" class="form-control">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Email</label>
+<input type="email" class="form-control">
+</div>
+
+<div class="mb-3">
+<label class="form-label">ข้อความ</label>
+<textarea class="form-control"></textarea>
+</div>
+
+<button class="btn btn-success">ส่งข้อมูล</button>
+
+</form>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-dark text-white text-center p-4">
+
+<div class="mb-3">
+
+<a href="https://www.facebook.com" target="_blank" class="text-white m-2">
+<i class="fab fa-facebook fa-2x"></i>
+</a>
+
+<a href="https://www.instagram.com" target="_blank" class="text-white m-2">
+<i class="fab fa-instagram fa-2x"></i>
+</a>
+
+<a href="https://line.me" target="_blank" class="text-white m-2">
+<i class="fab fa-line fa-2x"></i>
+</a>
+
+</div>
+
+<p>© 2025 Movie By 68021656</p>
+
+</footer>
+
+
+<!-- ================= MODAL ================= -->
+
+<div class="modal fade" id="movie1">
+<div class="modal-dialog">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5>ล้วงลับเวทีลวง</h5>
+</div>
+
+<div class="modal-body">
+
+<p><b>ผู้กำกับ:</b> John Doe</p>
+<p><b>นักแสดง:</b> Actor A</p>
+
+<p>
+เรื่องราวเบื้องหลังวงการบันเทิงที่เต็มไปด้วยความลับ
+</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/en/1/1b/Avengers_Endgame_poster.jpg" class="img-fluid">
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
